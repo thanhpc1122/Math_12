@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,21 +6,17 @@
     <title>Equation Solver</title>
     <style>
         body {
-
             font-family: Arial, sans-serif;
             max-width: 800px;
-            margin: auto;
-            box-sizing: border-box;
-
             margin: 0;
             padding: 0;
             height: 100vh;
             background-image: url('anh-nen-2.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: left center;
             background-repeat: no-repeat;
         }
-        #output4, #output5 ,#output1 ,#output2 , #output6 ,#output7 ,#output3 , #output8 ,#output9 , #output10 , #output11 , #output12 , #output13{
+        #output4, #output5, #output1, #output2, #output6, #output7, #output3, #output8, #output9, #output10, #output11, #output12, #output13 {
             color: rgb(80, 255, 191);
         }
         h1 {
@@ -30,6 +25,7 @@
         }
         .container {
             margin-bottom: 20px;
+            text-align: left; /* Đảm bảo văn bản trong .container căn trái */
         }
         label {
             display: block;
@@ -59,14 +55,14 @@
         }
         #output4 {
             position: relative;
-            top: 1.25em; /* Điều chỉnh để dòng numerator xuống thấp hơn */
+            top: 1.25em;
         }
         #output5 {
-            margin: 0; /* Bỏ margin mặc định để các dòng gần nhau */
+            margin: 0;
         }
         #output1 {
             position: relative;
-            top: -1.25em; /* Điều chỉnh để dòng denominator lên cao hơn */
+            top: -1.25em;
         }
         .fraction-container-2 {
             position: relative;
@@ -74,18 +70,20 @@
         }
         #output2 {
             position: relative;
-            top: 1.25em; /* Điều chỉnh để dòng numerator xuống thấp hơn */
+            top: 1.25em;
         }
         #output6 {
-            margin: 0; /* Bỏ margin mặc định để các dòng gần nhau */
+            margin: 0;
         }
         #output7 {
             position: relative;
-            top: -1.25em; /* Điều chỉnh để dòng denominator lên cao hơn */
+            top: -1.25em;
         }
         @media (max-width: 600px) {
             body {
                 padding: 10px;
+                background-size: contain;
+                background-position: left;
             }
             input, select, button {
                 padding: 8px;
