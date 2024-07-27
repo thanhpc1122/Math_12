@@ -122,7 +122,7 @@ function solveQuadraticEquationZ_3(a, b, c) { // phương trình bậc 2
     if (delta > 0) {
         quadraticSolution1 = parseFloat(((-b + Math.sqrt(delta)) / (2 * a)).toFixed(5));
         quadraticSolution2 = parseFloat(((-b - Math.sqrt(delta)) / (2 * a)).toFixed(5));
-        output3.innerHTML  = `Phương trình có 2 nghiệm phân biệt: x1 = ${quadraticSolution1}, x2 = ${quadraticSolution2}`;
+        output3.innerHTML  = `Phương trình có 2 nghiệm : x1 = ${quadraticSolution1}, x2 = ${quadraticSolution2}`;
     } else if (delta === 0) {
         quadraticSolution1 = parseFloat((-b / (2 * a)).toFixed(4));
         output3.innerHTML  = `Phương trình có 1 nghiệm duy nhất: x = ${quadraticSolution1}`;
