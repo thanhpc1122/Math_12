@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Solver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .fraction-container {
+            position: relative;
+            text-align: left;
+        }
+        #output4 {
+            position: relative;
+            top: 1.25em; /* Điều chỉnh để dòng numerator xuống thấp hơn */
+        }
+        #output5 {
+            margin: 0; /* Bỏ margin mặc định để các dòng gần nhau */
+        }
+        #output1 {
+            position: relative;
+            top: -1.25em; /* Điều chỉnh để dòng denominator lên cao hơn */
+        }
+        .fraction-container-2 {
+            position: relative;
+            text-align: left;
+        }
+        #output2 {
+            position: relative;
+            top: 1.25em; /* Điều chỉnh để dòng numerator xuống thấp hơn */
+        }
+        #output6 {
+            margin: 0; /* Bỏ margin mặc định để các dòng gần nhau */
+        }
+        #output7 {
+            position: relative;
+            top: -1.25em; /* Điều chỉnh để dòng denominator lên cao hơn */
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            input, select, button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Equation Solver</h1>
+    <div class="container">
+        <label for="degree">Nhập vào bậc cao nhất của phương trình (1-4):</label>
+        <input type="number" id="degree" min="1" max="4">
+    </div>
+    <div class="container"> 
+        <label for="choice">Chọn 1 hoặc 2 hoặc 3:</label>
+        <input type="text" id="choice" placeholder="1. TXD : D = R | 2. TXD trên khoảng, đoạn | 3. TXD được xác định trên phần số">
+    </div>
+    <div class="container">
+        <label for="range">Nhập vào đoạn [a - b] hoặc khoảng (a - b):</label>
+        <input type="text" id="range" placeholder="Nhập hai số cách nhau bởi dấu cách">
+    </div>
+    <div class="container">
+        <label for="coefficients">Nhập các hệ số của phương trình cách nhau bởi dấu cách:</label>
+        <input type="text" id="coefficients" placeholder="Nhập các hệ số">
+    </div>
+
+    <button onclick="solveEquation()">Giải phương trình</button>
+    <div id="message"></div>
+
+    <div class="fraction-container">
+        <pre id="output4"></pre>     
+        <pre id="output5"></pre>
+        <pre id="output1"></pre>
+    </div>
+    <div class="fraction-container-2">
+        <pre id="output2"></pre>
+        <pre id="output6"></pre>
+        <pre id="output7"></pre>
+    </div>
+    <pre id="output3"></pre>
+    <pre id="output8"></pre>
+    <pre id="output9"></pre>
+    <pre id="output10"></pre>
+    <pre id="output11"></pre>
+    <pre id="output12"></pre>
+    <pre id="output13"></pre>
+
+    <script src="solver.js"></script>
+</body>
+</html>
